@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/gregbell/active_admin.git
+  remote: https://github.com/gregbell/active_admin.git
   revision: 7ad6ec39d959c70f580d7eb74fd84b57143e56e7
   specs:
     activeadmin (1.0.0.pre)
@@ -56,6 +56,13 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+    ckeditor (4.0.6)
+      mime-types
+      orm_adapter
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -65,7 +72,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     daemons (1.1.9)
-    devise (3.2.0)
+    devise (3.2.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -102,6 +109,8 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25)
+    mini_magick (3.6.0)
+      subexec (~> 0.2.1)
     minitest (4.7.5)
     multi_json (1.8.2)
     mysql2 (0.3.14)
@@ -166,6 +175,7 @@ GEM
       net-scp
       net-ssh
       term-ansicolor
+    subexec (0.2.3)
     term-ansicolor (1.2.2)
       tins (~> 0.8)
     thin (1.6.1)
@@ -199,9 +209,12 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   capistrano
+  carrierwave
+  ckeditor
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  mini_magick
   mysql2
   pry-rails
   rails (= 4.0.1)

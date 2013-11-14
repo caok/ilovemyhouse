@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131113061459) do
+ActiveRecord::Schema.define(version: 20131114150136) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -45,6 +45,29 @@ ActiveRecord::Schema.define(version: 20131113061459) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "assets", force: true do |t|
+    t.string   "storage_uid"
+    t.string   "storage_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ckeditor_assets", force: true do |t|
+    t.string   "data_file_name",               null: false
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.integer  "assetable_id"
+    t.string   "assetable_type",    limit: 30
+    t.string   "type",              limit: 30
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
   create_table "companies", force: true do |t|
     t.string   "name"

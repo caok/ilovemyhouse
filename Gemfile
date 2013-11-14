@@ -4,7 +4,10 @@ source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin', git: 'https://github.com/gregbell/active_admin.git'
+gem "ckeditor"
+gem "carrierwave"
+gem "mini_magick"
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
