@@ -47,11 +47,18 @@ GEM
       activesupport (>= 3.0.0)
     arel (4.0.1)
     atomic (1.1.14)
+    awesome_print (1.2.0)
     bcrypt-ruby (3.1.2)
+    better_errors (1.0.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
     builder (3.1.4)
+    callsite (0.0.11)
     capistrano (3.0.1)
       i18n
       rake (>= 10.0.0)
@@ -72,6 +79,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     daemons (1.1.9)
+    debug_inspector (0.0.2)
     devise (3.2.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -107,6 +115,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.2.8)
+      callsite
+      rack-contrib
+      railties
     method_source (0.8.2)
     mime-types (1.25)
     mini_magick (3.6.0)
@@ -127,7 +139,11 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.1)
@@ -208,15 +224,20 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  awesome_print
+  better_errors
+  binding_of_caller
   capistrano
   carrierwave
   ckeditor
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  meta_request
   mini_magick
   mysql2
   pry-rails
+  quiet_assets
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc

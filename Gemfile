@@ -39,9 +39,14 @@ group :doc do
 end
 
 group :development do
+  gem 'thin'
   gem 'pry-rails'
   gem 'capistrano'
-  gem 'thin'
+  gem 'awesome_print'
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
 end
 
 gem 'unicorn', group: :production
