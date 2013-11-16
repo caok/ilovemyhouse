@@ -1,3 +1,4 @@
+//https://github.com/galetahub/ckeditor/blob/master/app/assets/javascripts/ckeditor/config.js
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
