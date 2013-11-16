@@ -1,0 +1,5 @@
+zh-CN:
+  formtastic:
+    :create: '提交'
+    :update: '提交'
+    :submit: '提交'
