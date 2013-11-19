@@ -1,4 +1,7 @@
 Ilovemyhouse::Application.routes.draw do
+  root "home#index"
+  get "home/index"
+
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
