@@ -1,4 +1,10 @@
 ActiveAdmin.register New do
+  config.sort_order = "id_desc"
+  menu :priority => 5
+
+  filter :title
+  filter :content
+
   form do |f|
     f.inputs do
       f.input :title
