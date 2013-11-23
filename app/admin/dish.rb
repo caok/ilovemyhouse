@@ -1,6 +1,6 @@
 ActiveAdmin.register Dish do
   config.sort_order = "id_desc"
-  menu :priority => 4
+  menu :priority => 4, url: ->{ admin_dishes_path(locale: I18n.locale) }
 
   index do
     column :id

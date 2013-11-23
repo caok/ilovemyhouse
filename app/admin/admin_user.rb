@@ -1,5 +1,5 @@
 ActiveAdmin.register AdminUser do
-  menu :priority => 2
+  menu :priority => 2, url: ->{ admin_admin_users_path(locale: I18n.locale) }
   index do
     column :email
     column :current_sign_in_at

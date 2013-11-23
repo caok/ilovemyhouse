@@ -7,6 +7,21 @@ ActiveAdmin.setup do |config|
   #
   config.site_title = "Ilovemyhouse"
 
+  # select languages
+  config.namespace :admin do |admin|
+    admin.build_menu :utility_navigation do |menu|
+      menu.add :label => "Languages" do |lang|
+        lang.add :label => "Chinese",:url => proc { url_for(:locale => 'zh-CN') }, id: 'i18n-cn', :priority => 1
+        lang.add :label => "English",:url => proc { url_for(:locale => 'en') }, id: 'i18n-en', :priority => 2
+      end
+      menu.add :label => proc{ display_name current_active_admin_user},
+                :url => '#',
+                :id => 'current_user',
+                :if => proc{ current_active_admin_user? }
+      admin.add_logout_button_to_menu menu
+    end
+  end
+
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #

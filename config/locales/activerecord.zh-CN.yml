@@ -4,6 +4,7 @@ zh-CN:
       admin_user: "管理员"
       dish: "菜品"
       new: "新闻"
+      company: "企业信息"
     attributes:
       admin_user:
         email: "邮箱"
@@ -16,6 +17,7 @@ zh-CN:
       dish:
         title: "品名"
         content: "介绍"
+        picture: "图片"
         created_at: "创建时间"
         updated_at: "更新时间"
       new:
@@ -23,3 +25,11 @@ zh-CN:
         content: "内容"
         created_at: "创建时间"
         updated_at: "更新时间"
+      company:
+        name: "企业名称"
+        contact: "联系人"
+        tel: "电弧"
+        fax: "传真"
+        qq: "QQ"
+        address: "地址"
+        about: "关于我们"

@@ -46,6 +46,13 @@ ActiveRecord::Schema.define(version: 20131122143934) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "assets", force: true do |t|
+    t.string   "storage_uid"
+    t.string   "storage_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
     t.string   "data_content_type"

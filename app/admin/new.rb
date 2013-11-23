@@ -1,6 +1,6 @@
 ActiveAdmin.register New do
   config.sort_order = "id_desc"
-  menu :priority => 5
+  menu :priority => 5, url: ->{ admin_news_index_path(locale: I18n.locale) }
 
   filter :title
   filter :content

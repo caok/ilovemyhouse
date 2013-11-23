@@ -1,5 +1,5 @@
 zh-CN:
   formtastic:
-    :create: '提交'
-    :update: '提交'
+    :create: '创建'
+    :update: '更新'
     :submit: '提交'
