@@ -1,98 +1,121 @@
- body {
-   padding-top: 60px;
- }
- .navbar {
-   height: 60px;
- }
- .navbar-fixed-top {
-   /*width: 1000px;*/
-   margin-left: auto;
-   margin-right: auto;
- }
- .navbar .navbar-inner {
-   background: rgba(255, 255, 255, 0.960784);
-   border: none;
-   height: 60px;
-   padding-left: 20px;
-   padding-right: 20px;
- }
- .navbar .navbar-inner .brand {
-   margin: -10px 0px 0px -15px;
-   text-shadow: none;
-   color: #333333;
-   line-height: 40px;
-   font-family:"oswald";
-   font-size: 24px;
-   font-weight: bold;
- }
- .navbar .navbar-inner .nav li a {
-   line-height: 40px;
- }
- .container-fluid.container-fluid-1 {
-   background: #ffffff url(background.png) no-repeat center bottom;
-   background-size: cover;
- }
- .container-fluid.container-fluid-1 #fluid-blank {
-   height: 440px;
- }
- .container-fluid-1 .container {
-   margin-top: 30px;
-   margin-bottom: 170px;
- }
- .container-fluid-1 .container .row-fluid .span12 .heading {
-   line-height: 64px;
-   font-size: 58px;
- }
- .container-fluid-1 .container .row-fluid .span12 p {
-   font-size: 17px;
- }
- .container-fluid-1 .container .row-fluid .span12 .btn-primary {
-   background: #ff6a32;
-   text-shadow: none;
-   -moz-box-shadow: none;
-   -webkit-box-shadow: none;
-   -o-box-shadow: none;
-   box-shadow: none;
-   border-radius: 3px;
-   border: none;
-   margin: 15px 0px 0px 0px;
- }
- .container.container-1 {
-   margin-top: 60px;
- }
- .container-1 .row-fluid .span4 .heading {
-   font-weight: normal;
-   font-size: 29px;
-   text-align: center;
-   color: #454545;
- }
- .container-1 .row-fluid .span4 p {
-   font-weight: 300;
-   font-size: 16px;
-   text-align: center;
-   line-height: 25px;
- }
- .container.container-2 {
-   padding: 60px 0px 60px 0px;
- }
- .container-2 .row-fluid .span12 p {
-   font-weight: 300;
-   font-size: 22px;
-   text-align: center;
- }
- .container-fluid.container-fluid-2 {
-   background: #333333;
-   padding: 30px 20px 30px 20px;
- }
- .container-fluid-2 .container .row-fluid .span12 .pull-left p {
-   font-weight: 300;
-   color: #ffffff;
-   line-height: 36px;
- }
- .container-fluid-2 .container .row-fluid .span12 .nav {
-   margin: 0px;
- }
- .container-fluid-2 .container .row-fluid .span12 .nav li a {
-   text-align: center;
-   color: #cccccc;
- }
+body {
+  padding-top: 60px;
+}
+.navbar {
+  height: 60px;
+}
+.navbar-fixed-top {
+  /*width: 1000px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar .navbar-inner {
+  background: rgba(255, 255, 255, 0.960784);
+  border: none;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar .navbar-inner .brand {
+  margin: -10px 0px 0px -15px;
+  text-shadow: none;
+  color: #333333;
+  line-height: 40px;
+  font-family:"oswald";
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .navbar-inner .nav li a {
+  line-height: 40px;
+}
+.container-fluid.container-fluid-1 {
+  background: #ffffff url(background.png) no-repeat center bottom;
+  background-size: cover;
+}
+.container-fluid.container-fluid-1 #fluid-blank {
+  height: 440px;
+}
+.container-fluid-1 .container {
+  margin-top: 30px;
+  margin-bottom: 170px;
+}
+.container-fluid-1 .container .row-fluid .span12 .heading {
+  line-height: 64px;
+  font-size: 58px;
+}
+.container-fluid-1 .container .row-fluid .span12 p {
+  font-size: 17px;
+}
+.container-fluid-1 .container .row-fluid .span12 .btn-primary {
+  background: #ff6a32;
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border-radius: 3px;
+  border: none;
+  margin: 15px 0px 0px 0px;
+}
+.container.container-1 {
+  margin-top: 60px;
+}
+.container-1 .row-fluid .span4 .heading {
+  font-weight: normal;
+  font-size: 29px;
+  text-align: center;
+  color: #454545;
+}
+.container-1 .row-fluid .span4 p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+}
+.container.container-2 {
+  padding: 60px 0px 60px 0px;
+}
+.container-2 .row-fluid .span12 p {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+}
+.container-fluid.container-fluid-2 {
+  background: #333333;
+  padding: 30px 20px 30px 20px;
+}
+.container-fluid-2 .container .row-fluid .span12 .pull-left p {
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 36px;
+}
+.container-fluid-2 .container .row-fluid .span12 .nav {
+  margin: 0px;
+}
+.container-fluid-2 .container .row-fluid .span12 .nav li a {
+  text-align: center;
+  color: #cccccc;
+}
+
+#footer-left {
+  font-size: 13px;
+  font-family: "微软雅黑";
+  margin-bottom: -5px;
+}
+
+#footer-left a {
+  color: #ffffff;
+}
+
+#footer-left a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+#footer-left2 {
+  margin-top: -15px;
+  margin-bottom: 0px;
+  font-size: 10px;
+  font-family: "微软雅黑";
+  padding: 0px;
+}

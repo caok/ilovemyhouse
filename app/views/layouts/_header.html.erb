@@ -1,0 +1,15 @@
+<div class="navbar navbar-fixed-top" id="header">
+  <div class="navbar-inner">
+    <div class="container">
+    <a class="brand" href="#">
+      <%= image_tag("logo.png") %>
+    </a>
+    <ul class="nav pull-right">
+      <li><%=link_to "首页", root_path %></li>
+      <li><%= link_to "菜品介绍", dishes_path %></li>
+      <li><%= link_to "公司新闻", news_index_path %></li>
+      <li><%= link_to "关于我们", about_path %></li>
+    </ul>
+    </div>
+  </div>
+</div>

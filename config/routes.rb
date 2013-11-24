@@ -1,6 +1,11 @@
 Ilovemyhouse::Application.routes.draw do
+  resources :dishes, only: [:index, :show]
+  resources :news, only: [:index, :show]
+
   root "home#index"
   get "home/index"
+  get "about", to: "home#about"
+  get "contact_us", to: "home#contact_us"
 
   mount Ckeditor::Engine => '/ckeditor'
 
@@ -47,7 +52,7 @@ Ilovemyhouse::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

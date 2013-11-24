@@ -33,3 +33,5 @@ zh-CN:
         qq: "QQ"
         address: "地址"
         about: "关于我们"
+        created_at: "创建时间"
+        updated_at: "更新时间"
