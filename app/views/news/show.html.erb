@@ -1,2 +1,21 @@
-<h1>News#show</h1>
-<p>Find me in app/views/news/show.html.erb</p>
+<div class="container-fluid new">
+  <div id="fluid-blank"></div>
+</div>
+
+<div class="container container-1">
+  <div class="row-fluid">
+    <div class="span4">
+      <h4>新闻中心</h4>
+      <hr>
+      <% @news.each do |new| %>
+        <p><%= link_to new.title, new %></p>
+      <% end %>
+    </div>
+    <div class="span8">
+      <h4>新闻详情</h4>
+      <hr>
+      <h3 class="center"><%= @new.title %></h3>
+      <%= simple_format(@new.content, class: "about") %>
+    </div>
+  </div>
+</div>

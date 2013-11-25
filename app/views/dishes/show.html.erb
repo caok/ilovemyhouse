@@ -1,2 +1,26 @@
-<h1>Dishes#show</h1>
-<p>Find me in app/views/dishes/show.html.erb</p>
+<div class="container-fluid dish">
+  <div id="fluid-blank"></div>
+</div>
+
+<div class="container container-1">
+  <div class="row-fluid">
+    <div class="span4">
+      <h4>联系我们</h4>
+      <hr>
+      <p>联 系 人: <%= @company.contact %></p>
+      <p>联系电话: <%= @company.tel %></p>
+      <p>公司传真: <%= @company.fax %></p>
+      <p>即时通讯: <%= @company.qq %>(QQ)</p>
+      <p>公司地址: <%= @company.address%></p>
+    </div>
+    <div class="span8">
+      <h4>菜品详情</h4>
+      <hr>
+      <h3 class="center"><%= @dish.title %></h3>
+      <p class="center">
+        <%= image_tag(@dish.picture_url) %>
+      </p>
+      <%= simple_format(@dish.content, class: "about") %>
+    </div>
+  </div>
+</div>

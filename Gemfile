@@ -8,6 +8,7 @@ gem 'activeadmin', git: 'https://github.com/gregbell/active_admin.git'
 gem "ckeditor"
 gem "carrierwave"
 gem "mini_magick"
+gem 'kaminari'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'

@@ -1,2 +1,22 @@
-<h1>Home#about</h1>
-<p>Find me in app/views/home/about.html.erb</p>
+<div class="container-fluid about">
+  <div id="fluid-blank"></div>
+</div>
+
+<div class="container container-1">
+  <div class="row-fluid">
+    <div class="span4">
+      <h4>联系我们</h4>
+      <hr>
+      <p>联 系 人: <%= @company.contact %></p>
+      <p>联系电话: <%= @company.tel %></p>
+      <p>公司传真: <%= @company.fax %></p>
+      <p>即时通讯: <%= @company.qq %>(QQ)</p>
+      <p>公司地址: <%= @company.address%></p>
+    </div>
+    <div class="span8">
+      <h4>关于我们</h4>
+      <hr>
+      <%= simple_format(@company.about, class: "about") %>
+    </div>
+  </div>
+</div>
