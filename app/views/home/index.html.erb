@@ -3,24 +3,48 @@
     </div>
     <div class="container container-1">
       <div class="row-fluid">
-        <span class="span4">
-          <h2 class="heading">Benefit One</h2>
-          <p>Product benefit number one.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque lacinia elit, at gravida.</p>
+        <span class="span6">
+          <%= image_tag("1.png", size: "440x125") %>
+          <div>
+            <h3 class="heading-english">FOOD PRESENTATION</h3>
+            <h3 class="heading">菜品介绍</h3>
+            <% @dishes.each_slice(3) do |dishes| %>
+              <div class="box">
+                <% dishes.each do |dish| %>
+                  <p><%= dish.title%></p>
+                <% end %>
+              </div>
+            <% end %>
+            <div class="button">
+              <%= link_to "MORE + ", news_index_path, class: "btn" %>
+            </div>
+          </div>
         </span>
-        <span class="span4">
-          <h2 class="heading">Benefit Two</h2>
-          <p>Product benefit number two.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque lacinia elit, at gravida.</p>
+        <span class="span3">
+          <%= image_tag("2.png", size: "220x125") %>
+          <div>
+            <h3 class="heading-english">COMPANY CULTURE</h3>
+            <h3 class="heading">企业文化</h3>
+            <p><%= truncate(@company.about, :length => 47) %></p>
+            <div class="button">
+              <%= link_to "MORE + ", about_path, class: "btn" %>
+            </div>
+          </div>
         </span>
-        <span class="span4">
-          <h2 class="heading">Benefit Three</h2>
-          <p>Product benefit number one.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque lacinia elit, at gravida.</p>
+        <span class="span3">
+          <%= image_tag("3.png", size: "220x125") %>
+          <div>
+            <h3 class="heading-english">COMPANY NEWS</h3>
+            <h3 class="heading">公司新闻</h3>
+            <% @news.each do |new| %>
+              <p><%= new.title %></p>
+            <% end %>
+            <div class="button">
+              <%= link_to "MORE + ", news_index_path, class: "btn" %>
+            </div>
+          </div>
         </span>
       </div>
     </div>
-    <div class="container container-2">
-      <div class="row-fluid">
-        <span class="span12">
-          <p>Our philosophy here.&nbsp;Curabitur vel consequat tortor. Aliquam. Erat. Volutpat.</p>
-        </span>
-      </div>
+    <div class="container-2">
     </div>

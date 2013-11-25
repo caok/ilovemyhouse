@@ -60,20 +60,105 @@ body {
 .container.container-1 {
   margin-top: 60px;
 }
-.container-1 .row-fluid .span4 .heading {
+.container-1 .row-fluid .span6 .heading-english {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-style: solid none solid none;
+  border-width: thin;
   font-weight: normal;
-  font-size: 29px;
+  font-size: 17px;
   text-align: center;
-  color: #454545;
+  color: #ffffff;
 }
-.container-1 .row-fluid .span4 p {
+.container-1 .row-fluid .span6 .heading {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.container-1 .row-fluid .span6 p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  line-height: 25px;
+  line-height: 20px;
+  color: #dddddd;
 }
-.container.container-2 {
-  padding: 60px 0px 60px 0px;
+.container-1 .row-fluid .span6 p span {
+  width: 25px;
+}
+.container-1 .row-fluid .span6 div {
+  padding: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #3E403B;
+}
+.container-1 .row-fluid .span6 div div.box{
+  padding: 8px;
+  margin: 8px;
+  float:left;
+}
+.container-1 .row-fluid .span6 div p {
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container-1 .row-fluid .span6 div div.button{
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container-1 .row-fluid .span6 div a.btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-1 .row-fluid .span3 .heading-english {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-style: solid none solid none;
+  border-width: thin;
+  font-weight: normal;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+.container-1 .row-fluid .span3 .heading {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.container-1 .row-fluid .span3 p {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #dddddd;
+}
+.container-1 .row-fluid .span3 div {
+  padding: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #3E403B;
+}
+.container-1 .row-fluid .span3 div p {
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container-1 .row-fluid .span3 div div.button{
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container-1 .row-fluid .span3 div a.btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-2 {
+  padding: 0px 0px 30px 0px;
+  background: #ffffff url(lace.png) repeat fixed bottom;
 }
 .container-2 .row-fluid .span12 p {
   font-weight: 300;
@@ -81,7 +166,7 @@ body {
   text-align: center;
 }
 .container-fluid.container-fluid-2 {
-  background: #333333;
+  background: #3E403B;
   padding: 30px 20px 30px 20px;
 }
 .container-fluid-2 .container .row-fluid .span12 .pull-left p {
