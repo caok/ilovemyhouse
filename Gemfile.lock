@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/capistrano/rbenv.git
+  revision: 29260c6cf1380323ad282434aea8089c503e6e33
+  specs:
+    capistrano-rbenv (0.1.0)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2.0)
+
+GIT
   remote: https://github.com/gregbell/active_admin.git
   revision: 7ad6ec39d959c70f580d7eb74fd84b57143e56e7
   specs:
@@ -63,6 +71,12 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
+    capistrano-bundler (1.1.0)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
+    capistrano-rails (1.1.0)
+      capistrano (>= 3.0.0)
+      capistrano-bundler (>= 1.0.0)
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -187,8 +201,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sshkit (1.1.0)
-      net-scp
+    sshkit (1.2.0)
+      net-scp (>= 1.1.2)
       net-ssh
       term-ansicolor
     subexec (0.2.3)
@@ -227,7 +241,9 @@ DEPENDENCIES
   awesome_print
   better_errors
   binding_of_caller
-  capistrano
+  capistrano (~> 3.0.0)
+  capistrano-rails (~> 1.1.0)
+  capistrano-rbenv!
   carrierwave
   ckeditor
   coffee-rails (~> 4.0.0)
