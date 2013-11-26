@@ -29,7 +29,7 @@ body {
   line-height: 40px;
 }
 .container-fluid.container-fluid-1 {
-  background: #ffffff url(background.png) no-repeat center bottom;
+  background: #ffffff url(background.jpg) no-repeat center bottom;
   background-size: cover;
 }
 .container-fluid.container-fluid-1 #fluid-blank {
@@ -50,7 +50,7 @@ body {
   height: 162px;
 }
 .container-fluid.about {
-  background: #ffffff url(about.png) no-repeat center top;
+  background: #ffffff url(about.jpg) no-repeat center top;
   background-size: cover;
 }
 .container-fluid.about #fluid-blank {
