@@ -1,6 +1,6 @@
 class DishesController < ApplicationController
   def index
-    @dishes = Dish.page(params[:page]).per(5)
+    @dishes = Dish.page(params[:page]).per(6)
     @company = Company.last
   end
 

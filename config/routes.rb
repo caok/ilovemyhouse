@@ -5,7 +5,6 @@ Ilovemyhouse::Application.routes.draw do
   root "home#index"
   get "home/index"
   get "about", to: "home#about"
-  get "contact_us", to: "home#contact_us"
 
   mount Ckeditor::Engine => '/ckeditor'
 

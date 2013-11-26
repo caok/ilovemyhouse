@@ -16,10 +16,22 @@
     <div class="span8">
       <h4>菜品展示</h4>
       <hr>
-      <% @dishes.each do |dish| %>
-        <%= image_tag(dish.picture_url) %>
-        <%= dish.title %>
-      <% end %>
+      <ul class="thumbnails">
+        <% @dishes.each_slice(2) do |dishes| %>
+          <li class="span4 dish-each">
+            <% dishes.each do |dish| %>
+            <a href="<%=dish_path(dish)%>">
+              <div class="thumbnail">
+                <%= image_tag(dish.picture_url) %>
+                <div class="desc">
+                  <%= dish.title %>
+                </div>
+              </div>
+            </a>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
       <%= paginate @dishes %>
     </div>
   </div>
