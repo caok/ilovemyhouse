@@ -7,8 +7,7 @@ set :rbenv_ruby, '2.0.0-p247'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :user, "rails"
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :deploy_to, "/home/rails/apps/#{application}"
 set :scm, :git
 
 # set :format, :pretty
