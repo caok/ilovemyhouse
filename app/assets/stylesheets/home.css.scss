@@ -29,28 +29,28 @@ body {
   line-height: 40px;
 }
 .container-fluid.container-fluid-1 {
-  background: #ffffff url(background.jpg) no-repeat center bottom;
+  background: #ffffff image-url("background.jpg") no-repeat center bottom;
   background-size: cover;
 }
 .container-fluid.container-fluid-1 #fluid-blank {
   height: 440px;
 }
 .container-fluid.dish {
-  background: #ffffff url(dish.jpg) no-repeat center bottom;
+  background: #ffffff image-url("dish.jpg") no-repeat center bottom;
   background-size: cover;
 }
 .container-fluid.dish #fluid-blank {
   height: 162px;
 }
 .container-fluid.new {
-  background: #ffffff url(new.jpg) no-repeat center bottom;
+  background: #ffffff image-url("new.jpg") no-repeat center bottom;
   background-size: cover;
 }
 .container-fluid.new #fluid-blank {
   height: 162px;
 }
 .container-fluid.about {
-  background: #ffffff url(about.jpg) no-repeat center top;
+  background: #ffffff image-url("about.jpg") no-repeat center top;
   background-size: cover;
 }
 .container-fluid.about #fluid-blank {
@@ -192,7 +192,7 @@ body {
 }
 .container-2 {
   padding: 0px 0px 30px 0px;
-  background: #ffffff url(lace.png) repeat fixed bottom;
+  background: #ffffff image-url("lace.png") repeat fixed bottom;
 }
 .container-2 .row-fluid .span12 p {
   font-weight: 300;
