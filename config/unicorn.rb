@@ -1,9 +1,9 @@
 # encoding: utf-8
 # Spawn unicorn master worker for user apps (group: apps)
-user ENV['USER'] || 'rails', ENV['USER'] || 'rails'
+user 'rails', 'rails'
 
 # Set your full path to application.
-user = ENV['USER'] || 'rails'
+user = 'rails'
 application = "ilovemyhouse"
 app_path = "/home/#{user}/apps/#{application}"
 shared_path = "#{app_path}/shared"

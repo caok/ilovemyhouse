@@ -2,13 +2,13 @@
 require 'bundler/capistrano'
 
 set :application, "ilovemyhouse"
-set :repository, "git://github.com/caok/ilovemyhouse.git"
+set :repository, "https://github.com/caok/ilovemyhouse.git"
 #set :repository, File.expand_path('../../.git/', __FILE__)
 set :branch, "master"
 
 set :scm, :git
 
-set :user, ENV['USER'] || "rails"
+set :user, "rails"
 set :use_sudo, false
 
 # 部署路径修改为当前用户的目录，如果用默认的根目录且没有root权限会引起Permission denied的错误
@@ -20,7 +20,7 @@ set :rails_env, "production" #added for delayed job
 set :bundle_without,  [:development, :test]
 
 # for rbenv
-set :rbenv_version, ENV['RBENV_VERSION'] || "2.0.0-p247"
+set :rbenv_version, "2.0.0-p247"
 set :default_environment, {
   'PATH' => "/home/#{user}/.rbenv/shims:/home/#{user}/.rbenv/bin:$PATH",
   'RBENV_VERSION' => "#{rbenv_version}",
