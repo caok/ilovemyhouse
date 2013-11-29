@@ -100,3 +100,8 @@ CKEDITOR.config.toolbar_mini =
     ['Link','Unlink'],
     ['Image','Table','HorizontalRule']
   ];
+
+CKEDITOR.editorConfig = function(config) {
+  config.language = "zh-CN";
+  return true;
+}
