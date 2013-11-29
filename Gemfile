@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 
 gem 'activeadmin', git: 'https://github.com/gregbell/active_admin.git'
-gem "ckeditor"
+gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 gem "carrierwave"
 gem "mini_magick"
 gem 'kaminari'

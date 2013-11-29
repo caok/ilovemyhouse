@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ckeditor/config
-//= require_tree .
+//= require ckeditor/override
+//= require ckeditor/init
