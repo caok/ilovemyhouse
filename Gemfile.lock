@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/galetahub/ckeditor.git
-  revision: 6ac7f1eb21cbf439fabeccc63ea804fd8589d68a
-  specs:
-    ckeditor (4.0.6)
-      mime-types
-      orm_adapter
-
-GIT
   remote: https://github.com/gregbell/active_admin.git
   revision: 7ad6ec39d959c70f580d7eb74fd84b57143e56e7
   specs:
@@ -77,6 +69,9 @@ GEM
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
+    ckeditor (4.0.6)
+      mime-types
+      orm_adapter
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -234,7 +229,7 @@ DEPENDENCIES
   binding_of_caller
   capistrano (~> 2.15.5)
   carrierwave
-  ckeditor!
+  ckeditor
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails

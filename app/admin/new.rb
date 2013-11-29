@@ -8,7 +8,8 @@ ActiveAdmin.register New do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'mini'} }
+      #f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'mini'} }
+      f.input :content
     end
     f.actions
   end

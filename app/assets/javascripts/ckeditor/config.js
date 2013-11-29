@@ -2,7 +2,7 @@
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
-  // config.language = 'fr';
+  config.language = 'zh-CN';
   // config.uiColor = '#AADC6E';
 
   /* Filebrowser routes */
@@ -100,8 +100,3 @@ CKEDITOR.config.toolbar_mini =
     ['Link','Unlink'],
     ['Image','Table','HorizontalRule']
   ];
-
-CKEDITOR.editorConfig = function(config) {
-  config.language = "zh-CN";
-  return true;
-}
